@@ -3,6 +3,7 @@
 [![CI](https://github.com/gazzycodes/knot/actions/workflows/ci.yml/badge.svg)](https://github.com/gazzycodes/knot/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/knot-imports.svg)](https://pypi.org/project/knot-imports/)
 
 **Detect and visualize circular imports in Python projects — fast, static, and dependency-free.**
 
@@ -17,7 +18,7 @@ can emit a [Mermaid](https://mermaid.js.org/) diagram of your import graph.
 
 ## Demo
 
-![knot detecting a circular import in the bundled example project](docs/demo.gif)
+![knot detecting a circular import in the bundled example project](https://raw.githubusercontent.com/gazzycodes/knot/main/docs/demo.gif)
 
 > The [`examples/shop`](examples/shop) package intentionally contains a circular
 > import so you can try `knot` immediately: `knot examples/shop`.
