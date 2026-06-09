@@ -77,4 +77,4 @@ def render(fmt: str, graph: ImportGraph, cycles: List[Cycle]) -> str:
     try:
         return formatters[fmt](graph, cycles)
     except KeyError:  # pragma: no cover - guarded by argparse choices
-        raise ValueError(f"unknown format: {fmt!r}")
+        raise ValueError(f"unknown format: {fmt!r}") from None

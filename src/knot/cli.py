@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-from typing import List, Optional, Sequence
+from typing import Optional, Sequence
 
 from knot import __version__
 from knot.analyzer import build_graph
