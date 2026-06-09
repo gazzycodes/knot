@@ -15,6 +15,13 @@ dependency graph, and reports every cycle with a concrete example path.
 It has **zero runtime dependencies**, runs in CI (non-zero exit on cycles), and
 can emit a [Mermaid](https://mermaid.js.org/) diagram of your import graph.
 
+## Demo
+
+![knot detecting a circular import in the bundled example project](docs/demo.gif)
+
+> The [`examples/shop`](examples/shop) package intentionally contains a circular
+> import so you can try `knot` immediately: `knot examples/shop`.
+
 ## Installation
 
 ```bash
@@ -93,6 +100,8 @@ git clone https://github.com/gazzycodes/knot
 cd knot
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
+
+The demo GIF is regenerated with `python make_demo.py` (requires `pillow`).
 
 Contributions are welcome — please open an issue or PR.
 

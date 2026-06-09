@@ -18,3 +18,7 @@ htmlcov/
 # Local bootstrap scripts — not part of the project, never pushed
 init_repo.sh
 init_repo.bat
+push.bat
+push_fix.bat
+publish_demo.bat
+scrub_tape.bat
