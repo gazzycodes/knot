@@ -81,7 +81,33 @@ or the [Mermaid Live Editor](https://mermaid.live/).
 | `2`  | Error (e.g. path not found) |
 
 Pass `--no-fail` to always exit `0` (useful when you only want the report).
-Drop `knot .` into a pre-commit hook or CI step to keep cycles out of `main`.
+
+## Use it as a pre-commit hook
+
+Add this to your project's `.pre-commit-config.yaml` and `knot` runs on every commit:
+
+```yaml
+repos:
+  - repo: https://github.com/gazzycodes/knot
+    rev: v0.1.1
+    hooks:
+      - id: knot
+```
+
+Then `pre-commit install` once, or run it on demand with
+`pre-commit run knot --all-files`.
+
+## Use it in CI (GitHub Actions)
+
+```yaml
+- uses: actions/setup-python@v5
+  with:
+    python-version: "3.x"
+- run: pip install knot-imports
+- run: knot .
+```
+
+The non-zero exit on cycles fails the job automatically.
 
 ## How it works
 

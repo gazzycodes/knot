@@ -1,0 +1,7 @@
+- id: knot
+  name: knot (detect circular imports)
+  description: Detect and visualize circular imports in a Python project.
+  entry: knot
+  language: python
+  pass_filenames: false
+  types: [python]
